@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>lucasfariassa</title>>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <main id="root">
+        <article id="welcome">
+            <h3>Olá, Boas-vindas!</h3>
+            <h3>me chamo Lucas Farias</h3>
+            <h1>lucasfariassa</h1>
+            <p class="social-media-icon">Instagram</p>
+            <p class="social-media-icon">TikTok</p>
+            <p class="social-media-icon">X</p>
+            <p class="social-media-icon">BeReal</p>
+            <p class="social-media-icon">VSCO</p>
+            <h4>obrigado por se interessar pelos meus conteúdos</h4>
+            <figure>foto de lucas</figure>
+        </article>
+        <section id="channels-and-blogs">
+            <article>
+                <figure>imagem canal lucasfariassa</figure>
+                <p class="subtitle">Lucas Farias</p>
+            </article>
+            <article>
+                <figure>imagem canal luckieskywalker</figure>
+                <p class="subtitle">LuckieSkywalker</p>
+            </article>
+            <article>
+                <figure>imagem blog monte 139</figure>
+                <p class="subtitle">Monte 139</p>
+            </article>
+            <article>
+                <figure>imagem blog asian station</figure>
+                <p class="subtitle">Asian Station</p>
+            </article>
+        </section>
+        <section id="last-videos">
+          <div id="lucas-fariassa-videos"></div>
+          <div id="luckie-skywalker-videos"></div>
+      </section>
+    </main>
+
+    <!-- Importe os arquivos JavaScript com as funções -->
+    <script src="app/frontend/src/VideoPlayer.js"></script>
+
+    <script>
+      // Renderize o componente React para o canal Lucas Fariassa
+      ReactDOM.render(<VideoPlayerLucasFariassa />, document.getElementById('lucas-fariassa-videos'));
+  
+      // Renderize o componente React para o canal LuckieSkywalker
+      ReactDOM.render(<VideoPlayerLuckieSkywalker />, document.getElementById('luckie-skywalker-videos'));
+  </script>
+
+</body>
+
+</html>
